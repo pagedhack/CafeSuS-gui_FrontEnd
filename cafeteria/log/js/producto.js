@@ -1,13 +1,11 @@
 
 var boton = document.getElementById('agregar');
-var guardar = document.getElementById('guardar');
 var lista = document.getElementById('lista');
 
 var data=[];
 var cant=0;
 
 boton.addEventListener("click", agregar);
-guardar.addEventListener("click", save);
 
 function agregar(){
     var nombre=document.getElementById('nombre').value;
@@ -36,9 +34,22 @@ function agregar(){
 
     sumar();
 }
-function save(){
 
-}
+var pRegistro = document.getElementById("enviar");
+    pRegistro.addEventListener("click", function () {
+        var json = JSON.stringify(data);
+        console.log(json);
+        axios.post("http://localhost/producto-log", {
+            data
+            })
+            .then (function (respuesta) {
+                window.open("../log/producto-log.html", "_self")
+            })
+            .catch(function (error) {
+                console.log(error)
+            })
+    })
+
 function sumar(){
     var tot=0;
     for(x of data){
