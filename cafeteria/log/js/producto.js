@@ -40,7 +40,7 @@ var pRegistro = document.getElementById("enviar");
         var json = JSON.stringify(data);
         console.log(json);
         axios.post("http://localhost/producto-log", {
-            data
+            json:json
             })
             .then (function (respuesta) {
                 window.open("../log/producto-log.html", "_self")
