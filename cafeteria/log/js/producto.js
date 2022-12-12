@@ -37,10 +37,10 @@ function agregar(){
 
 var pRegistro = document.getElementById("enviar");
     pRegistro.addEventListener("click", function () {
-        var json = JSON.stringify(data);
+        var json = JSON.parse(JSON.stringify(data));
         console.log(json);
         axios.post("http://localhost/producto-log", {
-            json:json
+            json
             })
             .then (function (respuesta) {
                 window.open("../log/producto-log.html", "_self")
