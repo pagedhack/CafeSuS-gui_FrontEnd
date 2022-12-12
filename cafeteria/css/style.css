@@ -6,7 +6,6 @@
 @import url(animate.css);
 @import url(font-awesome.min.css);
 @import url(superslides.css);
-@import url(baguetteBox.min.css);
 
 body {
     color: black;
@@ -28,11 +27,7 @@ a {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2, {
     letter-spacing: 0;
     font-weight: normal;
     position: relative;
@@ -51,39 +46,15 @@ h2 {
     font-size: 22px
 }
 
-h3 {
-    font-size: 18px
-}
-
-h4 {
-    font-size: 16px
-}
-
-h5 {
-    font-size: 14px
-}
-
-h6 {
-    font-size: 13px
-}
-
 h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
+h2 a {
     color: #212121;
     text-decoration: none!important;
     opacity: 1
 }
 
 h1 a:hover,
-h2 a:hover,
-h3 a:hover,
-h4 a:hover,
-h5 a:hover,
-h6 a:hover {
+h2 a:hover{
     opacity: .8
 }
 
