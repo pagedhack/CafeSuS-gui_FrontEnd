@@ -39,7 +39,7 @@ var pRegistro = document.getElementById("enviar");
     pRegistro.addEventListener("click", function () {
         var json = JSON.parse(JSON.stringify(data));
         console.log(json);
-        axios.post("http://localhost/producto-log", {
+        axios.post("https://cafesus-despliegue-production-1e7c.up.railway.app/producto-log", {
             json
             })
             .then (function (respuesta) {

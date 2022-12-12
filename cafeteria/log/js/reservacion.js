@@ -7,7 +7,7 @@ var rRegistro = document.getElementById("reservar");
                 let nombre = document.getElementById("nombre").value;
                 let correo = document.getElementById("correo").value;
                 let telefono = document.getElementById("telefono").value;
-                axios.post("http://localhost/reservacion-log", {
+                axios.post("https://cafesus-despliegue-production-1e7c.up.railway.app/reservacion-log", {
                 fecha : fecha,
                 hora : hora,
                 persona : persona,
