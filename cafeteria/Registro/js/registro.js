@@ -11,7 +11,7 @@ var bRegistro = document.getElementById("regis");
                 nombre : nombre,
                 correo : correo
                 })
-                .then (function (respuesta) {
+                .then (function (response) {
                     swal("Bienvenido!", "", "");
                     window.open("../log/index-log.html", "_self")
                 })
