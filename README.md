@@ -1,2 +1,3 @@
-# CafeSuS-gui
-frontend
+# CafeSuS-gui- FrontEnd
+
+Despliegue de servicio de una cafeteria de frontend
